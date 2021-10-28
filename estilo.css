@@ -1,0 +1,146 @@
+body{
+    background: rgba(201, 169, 63, 0.37);
+}
+.navbar-brand{
+    font-style: italic;
+    font-weight: 500;
+    padding: 0.25rem 3rem 0.25rem 1rem;
+}
+#demo{
+    margin: 0 2.5rem 2rem;
+}
+.imgCarrousel{
+    width:100%;
+    height: 37rem;
+}
+h1{
+    font-size: 5rem;
+}
+p.descripcionCarrousel{
+    font-size: 1.5rem;
+}
+.descripcionCarrouselVino{
+    background: linear-gradient(to right, rgba(255, 196, 0, 0.267), white 50%, rgba(255, 196, 0, 0.267));
+    color: rgb(168, 38, 38);
+    font-weight: 500;
+}
+.descripcionCarrouselCerveza{
+    background: linear-gradient(to right, rgba(255, 196, 0, 0.171), white 50%, rgba(255, 196, 0, 0.267));
+    color: rgb(160, 86, 25);
+    font-weight: 500;
+}
+.descripcionCarrouselBebidas{
+    background: linear-gradient(to right, rgba(0, 255, 157, 0.274), rgba(255, 255, 255, 0.932) 50%, rgba(0, 255, 157,  0.274));
+    color: rgb(5, 126, 173);
+    font-weight: 500;
+}
+.contenedorgrid{   
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.cartaOfertas{
+    grid-column: 2 / 12;
+}
+.cartaOfertas .img2{
+    display: none;
+}
+hr{
+    grid-column: 1 / span 12;
+}
+/*p.categorias{
+    grid-column: 1 / span 12;
+    margin: 2rem 1.5rem;
+    color: rgb(0, 0, 0);
+}*/
+p.categorias{
+    grid-column: 1 / span 12;
+    margin: 2rem 0;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.25rem;
+    color: rgb(230, 217, 175);
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.849), rgba(201, 169, 63, 0) 80%, rgba(201, 169, 63, 0));
+}
+.cartaBebidas{
+    grid-column: span 4;
+}
+.cartaVinos{
+    grid-column: span 4;
+}
+.cartaCervezas{
+    grid-column: span 4;
+}
+.dropdown-item:hover{
+    background-color: rgba(189, 183, 107, 0.644);
+}
+
+@media (max-width:600px){    
+    #demo{
+        margin: auto;
+    }
+    .imgCarrousel{
+        width:100%;
+        height: 17rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    p.descripcionCarrousel{
+        font-size: 1rem;
+    }
+    .cartaOfertas{
+        grid-column: span 12;
+    }
+    .cartaOfertas .img1{
+        display:none;
+    }
+    .cartaOfertas .img2{
+        display:block;
+    }
+    .cartaBebidas{
+        grid-column: span 12;
+    }
+    .cartaVinos{
+        grid-column: span 12;
+    }
+    .cartaCervezas{
+        grid-column: span 12;
+    }
+}
+@media (min-width:600px) and (max-width:1024px){    
+    #demo{
+        margin: auto;
+    }
+    .imgCarrousel{
+        width:100%;
+        height: 27rem;
+    }
+    h1{
+        font-size: 3rem;
+    }
+    p.descripcionCarrousel{
+        font-size: 1rem;
+    }
+    .cartaOfertas{
+        grid-column: span 12;
+    }
+    .cartaOfertas .img1{
+        display:block;
+    }
+    .cartaOfertas .img2{
+        display:none;
+    }
+    .cartaBebidas{
+        grid-column: span 6;
+    }
+    .cartaVinos{
+        grid-column: span 6;
+    }
+    .cartaCervezas{
+        grid-column: span 6;
+    }
+}
+@media (min-width:1024px) and (max-width:1290px){
+    #demo{
+        margin: auto;
+    }
+}
