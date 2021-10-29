@@ -72,7 +72,35 @@ p.categorias{
 .dropdown-item:hover{
     background-color: rgba(189, 183, 107, 0.644);
 }
-
+.formulario{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+}
+.formulario form{
+    grid-column: 4 / span 6;
+}
+.mapas{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-around;
+}
+iframe{
+    width: 30%;
+    height: 20rem;
+}
+.contacto{
+    margin-left: 1.5rem;
+}
+footer{
+    margin-top: 5rem;
+}
+p.redes{
+    text-align: center;
+}
+p.footerLinks{
+    text-align: center;
+}
 @media (max-width:600px){    
     #demo{
         margin: auto;
@@ -104,6 +132,12 @@ p.categorias{
     }
     .cartaCervezas{
         grid-column: span 12;
+    }
+    .formulario form{
+        grid-column: 2 / span 10;
+    }
+    #registro{
+        display: none;
     }
 }
 @media (min-width:600px) and (max-width:1024px){    
@@ -142,5 +176,15 @@ p.categorias{
 @media (min-width:1024px) and (max-width:1290px){
     #demo{
         margin: auto;
+    }
+}
+@media (min-width:1024px){
+    p.categoriasInicio{
+        grid-column: 1 / span 12;
+        margin: 2rem 1.5rem;
+        padding: 0.75rem 1.5rem;
+        border-radius: 0.25rem;
+        color: rgb(230, 217, 175);
+        background: linear-gradient(to right, rgba(0, 0, 0, 0.849), rgba(201, 169, 63, 0) 80%, rgba(201, 169, 63, 0));
     }
 }
